@@ -61,9 +61,9 @@ if img is not None:
 
     # Display results
     confidence = round(float(prediction) * 100, 2)  # Convert to percentage
-    if prediction > 0.8:
-        result = f"🔴 Cancer Detected ({confidence}% confidence)"
+    if prediction > 0.83:
+        result = f"🔴 Cancer Detected "
     else:
-        result = f"🟢 No Cancer Detected ({100 - confidence}% confidence)"
+        result = f"🟢 No Cancer Detected"
     
     st.subheader(result)
